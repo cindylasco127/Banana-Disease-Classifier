@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/13CF_ITlv3WCmA00qUPpz2n7ysK0mo9AG
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
+# from google.colab import drive
+# drive.mount('/content/drive')
 
 import streamlit as st
 from PIL import Image
@@ -61,7 +61,7 @@ def main():
 
 
  def predict(image):
-    classifier_model = "/content/drive/MyDrive/MIT-Project/classify-vgg19-model-final.h5"
+   classifier_model = "/content/drive/MyDrive/MIT-Project/classify-vgg19-model-final.h5"
       
      model = load_model(classifier_model)
       
