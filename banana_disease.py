@@ -61,7 +61,7 @@ def main():
 
 
  def predict(image):
-   classifier_model = "/content/drive/MyDrive/MIT-Project/classify-vgg19-model-final.h5"
+     classifier_model = "/content/drive/MyDrive/MIT-Project/classify-vgg19-model-final.h5"
       
      model = load_model(classifier_model)
       
@@ -77,7 +77,7 @@ def main():
 
     
      result = f"{class_names[np.argmax(scores)]} with a { (100 * np.max(scores)).round(2) } % confidence." 
-    return result
+     return result
 
 
 ## -----------------------------------------------------x---------------------------------------x--------------------------------------------##
