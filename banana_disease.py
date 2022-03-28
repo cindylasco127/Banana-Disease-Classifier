@@ -60,7 +60,7 @@ def main():
 ## This code is for saved model in format as H5 file
 
 
- def predict(image):
+def predict(image):
      classifier_model = "/content/drive/MyDrive/MIT-Project/classify-vgg19-model-final.h5"
       
      model = load_model(classifier_model)
