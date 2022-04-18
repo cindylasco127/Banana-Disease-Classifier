@@ -61,7 +61,7 @@ def main():
 
 
 def predict(image):
-     classifier_model = "/content/drive/MyDrive/MIT-Project/classify-vgg19-model-final.h5"
+     classifier_model = "/content/drive/MyDrive/Banana-Disease-Classifier/Models/classify-vgg19-model-final.h5"
       
      model = load_model(classifier_model)
       
