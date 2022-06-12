@@ -85,7 +85,7 @@ def predict(image):
 
 ## this code for format tflite file
 # def predict(image):
-#    model = "/content/drive/MyDrive/MIT-Project/classify-vgg19-model-final.h5" 
+#    model = "classify-vgg19-model-final.h5" 
 
 
 #    interpreter = tf.lite.Interpreter(model_path = model)
