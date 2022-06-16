@@ -61,7 +61,7 @@ def main():
 
 
 def predict(image):
-     classifier_model = "classify-vgg19-model-final.h5"
+     classifier_model = "inceptionv3-final-banana-disease-1.h5"
       
      model = load_model(classifier_model)
       
