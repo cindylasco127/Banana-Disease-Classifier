@@ -61,7 +61,7 @@ def main():
 
 
 def predict(image):
-     classifier_model = "inceptionv3-final-banana-disease-2.h5"
+     classifier_model = "resnet50-model.h5"
       
      model = load_model(classifier_model)
       
