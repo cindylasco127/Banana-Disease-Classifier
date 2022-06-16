@@ -53,11 +53,11 @@ def predict(image):
       
      model = load_model(classifier_model)
       
-     test_image = image.resize((200,200))
+     test_image = image.resize((224,224))
      test_image = preprocessing.image.img_to_array(test_image)
-     test_image = keras.applications.resnet50.preprocess_input(test_image)
+     test_image = keras.applications.imagenet_utils.preprocess_input((test_image)
      test_image = np.expand_dims(test_image, axis=0)
-     class_names = {0 : 'healthy', 1 :'diseased'}
+     class_names = {0 : 'bunchy-top', 1 :'fusarium-wilt', 2 :'healthy', 3 :'moko', 4 :'sigatoka'}
 
      predictions = model.predict(test_image)
      scores = tf.nn.softmax(predictions[0])
